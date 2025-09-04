@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual studio</title>
+
+    <script>
+
+      console.log("Element Clicked")
+
+      function addRed() {
+             var h2_DOM_Element = document.querySelector(".form");
+  
+              h2_DOM_Element.style.color = "white";
+              h2_DOM_Element.style.padding = "blue";
+              h2_DOM_Element.style.backgroundColor = "black";       
+      }
+       function addblack() {
+             var h2_DOM_Element = document.querySelector(".form");
+  
+              h2_DOM_Element.style.color = "darkblue";
+              h2_DOM_Element.style.padding = "violet";
+              h2_DOM_Element.style.backgroundColor = "green";       
+      }
+    </script>
+    <style>
+        div {
+            width: auto;
+            height: 80;
+            background-color: rgb(13, 252, 57);
+            text-align: center;
+            color: white;
+        }
+        img {
+            object-fit: initial;
+            box: shadow 100px;
+        }
+        h1 {
+            font-size: medium;
+        }
+        h2 {
+            font-size: medium;
+        }
+        div {
+            color: rgb(255, 4, 4);
+        }
+        form{
+          color: black;
+        }
+
+        body{
+          background-color: blueviolet;
+        }
+        button{
+          background-color: green;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        form {
+          width: 50%;
+          margin:40px auto;
+          padding:20px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          box-shadow: 0 0 10px black;
+          background-color: red;
+        }
+        img{
+          width:50%;
+          height: auto;
+          border-radius: 10px;
+          box-shadow: 0 0 10px black;
+          margin: 20px;/* add some space around the image*/
+          display: flex;
+          display:outline-flex;
+          shape-margin: 50px;
+          shape-rendering: auto;
+        }
+    </style>
+</head>
+    
+      
+<body>
+    <div>
+    <div class="MY TUBE">
+        <h1>MY TUBE</h1>
+       </div>
+     <div class="menus">
+        <a href="home.html">home</a>
+        <a href="subcrition.html">subcritions</a>
+        <a href="Video.html">Video</a>
+        <a href="contactus.html">cantactus</a>
+     </div>   
+     </div>
+    <br>
+    </body>
+  
+    <body>
+      <center>
+      <form class="form" onmouseenter="addRed()" onmouseleave="addblack()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email</label>
+        <input type="Email" id="email" name="email"><br><br>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="Female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="others" name="gender">
+        <label for="others">others</label>
+        <center>
+       <button type="submit">Submit</button>
+       <button type="reset">reset</button>
+       <button disabled>Click me</button>
+       </center>
+       </form>
+      </center>
+    </body>
+       <body>
+        <center>
+        <img src="image.png">
+        </center>
+       </body>
+</html>
