@@ -31,8 +31,16 @@ app.use('/users', usersRouter);
 
 // Chatbot endpoint
 function botReply(message) {
+  if (message.includes("hi")) return "Hello! How can I assist you today?";
+  if (message.includes("how old are you")) return "I'm a chatbot, so I don't have an age!";
   if (message.includes("hello")) return "Hi! How can I help you?";
   if (message.includes("name")) return "I'm your chatbot created with Node & React!";
+  if (message.includes("bye")) return "Goodbye! Have a great day!"; 
+  if (message.includes("thank you")) return "You're welcome! If you have any more questions, feel free to ask.";
+  if (message.includes("what can you do")) return "I can chat with you and answer simple questions. Try asking me something!";
+  if (message.includes("who created you")) return "created by Mohammed Abdul kalam using Node.js and React.";
+  if (message.includes("2+2")) return "4";
+  if (message.includes("4+4")) return "8";
   if (message.includes("how are you")) return "I'm fine thank you for asking! What about you?";
   if (message.includes("what is your favorite technology")) return "I love working on Artificial Intelligence and Machine Learning!";
   if (message.includes("tell me a story") || message.includes("joke")) return "Why did the computer show up at work late? It had a hard drive!";
